@@ -245,3 +245,22 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+
+
+# API Routes
+override_whitelisted_methods = {
+    'GET /api/method/task_manager.api.get_task': 'task_manager.api.get_task',
+    'POST /api/method/task_manager.api.create_task': 'task_manager.api.create_task',
+    'PUT /api/method/task_manager.api.update_task': 'task_manager.api.update_task',
+    'DELETE /api/method/task_manager.api.delete_task': 'task_manager.api.delete_task'
+}
+
+
+api = {
+    "methods": [
+        "task_manager.api.project.get_projects",
+        "task_manager.api.project.get_user_tasks"
+        "task_manager.api.get_time_logs"
+    ]
+}
